@@ -1,8 +1,8 @@
 
 
-# llista de llistes
+# exercici 1 - llista de llistes
 
-trimestres2 = [
+trimestres = [
     ["gener", "febrer", "març"], 
     ["abril", "maig", "juny"], 
     ["juliol", "agost", "setembre"], 
@@ -10,8 +10,8 @@ trimestres2 = [
 ]
 
 
-print(trimestres2)
+# exercici 2 - 
 
-
-
-
+print(trimestres[0][1])
+print(trimestres[0])
+print(trimestres[2][2], trimestres[3][0])
