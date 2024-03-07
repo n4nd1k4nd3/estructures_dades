@@ -44,7 +44,14 @@ if contar3 > 0 or contar4 > 0 :
 else:
     print("No, els números 3 y 4 no estàn a la llista")
 
-
 #Quin és el número més gran?
+llista_ordenada = sorted(llista_numeros)
+print(llista_ordenada[-1])
+
+print(sorted(llista_numeros)[-1]) # variant xula
+
 #Quins són els 3 números més petits?
+print(sorted(llista_numeros)[0:3])
+
 #Quin és el rang d’aquesta llista?
+print(range(len(llista_numeros)))
