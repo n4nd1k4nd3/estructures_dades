@@ -31,12 +31,15 @@ else:
 
 
 #Quantes vegades apareixen els nombres 3 i 4?
-if 3 and 4 in llista_numeros:
-    print(f"Si, el número 3 apareix {llista_numeros.count(3)} vegades y el número 4 apareix {llista_numeros.count(4)} vegades")
+contar3 = llista_numeros.count(3)
+contar4 = llista_numeros.count(4)
+
+if contar3 and contar4 in llista_numeros:
+    print(f"Si, el número 3 apareix {contar3} vegades y el número 4 apareix {contar4} vegades")
 elif 3 and not 4 in llista_numeros:
-    print(f"Si, el número 3 apareix {llista_numeros.count(3)} vegades y el número 4 no apareix")
+    print(f"Si, el número 3 apareix {contar3} vegades y el número 4 no apareix")
 elif 4 and not 3 in llista_numeros:
-    print(f"Si, el número 4 apareix {llista_numeros.count(4)} vegades y el número 3 no apareix")
+    print(f"Si, el número 4 apareix {contar4} vegades y el número 3 no apareix")
 else:
     print("No, els números 3 y 4 no estàn a la llista")
 
