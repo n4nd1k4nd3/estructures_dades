@@ -18,7 +18,7 @@ print(trimestres[2][2], trimestres[3][0])
 
 # exercici 3 - nombres desordenats
 
-llista_numeros = [5, 8, 2, 1, 19, 12, 11]
+llista_numeros = [5, 8, 2, 4, 1, 19, 12, 11, 3]
 
 #Quants números hi ha?
 print(len(llista_numeros))
@@ -34,14 +34,16 @@ else:
 contar3 = llista_numeros.count(3)
 contar4 = llista_numeros.count(4)
 
-if contar3 and contar4 in llista_numeros:
-    print(f"Si, el número 3 apareix {contar3} vegades y el número 4 apareix {contar4} vegades")
-elif 3 and not 4 in llista_numeros:
-    print(f"Si, el número 3 apareix {contar3} vegades y el número 4 no apareix")
-elif 4 and not 3 in llista_numeros:
-    print(f"Si, el número 4 apareix {contar4} vegades y el número 3 no apareix")
+if contar3 > 0 or contar4 > 0 :
+    if contar3 > 0 and contar4 > 0:
+        print(f"Si, el número 3 apareix {contar3} vegades y el número 4 apareix {contar4} vegades")
+    elif contar3 > 0:
+        print(f"Si, el número 3 apareix {contar3} vegades y el número 4 no apareix")
+    elif contar4 > 0:
+        print(f"Si, el número 4 apareix {contar4} vegades y el número 3 no apareix")
 else:
     print("No, els números 3 y 4 no estàn a la llista")
+
 
 #Quin és el número més gran?
 #Quins són els 3 números més petits?
