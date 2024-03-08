@@ -1,6 +1,6 @@
 
 
-# exercici 1 - llista de llistes
+# EXERCICI 1 - llista de llistes
 
 trimestres = [
     ["gener", "febrer", "març"], 
@@ -10,13 +10,13 @@ trimestres = [
 ]
 
 
-# exercici 2 - accedir a la llista
+# EXERCICI 2 - accedir a la llista
 
 print(trimestres[0][1])
 print(trimestres[0])
 print(trimestres[2][2], trimestres[3][0])
 
-# exercici 3 - nombres desordenats
+# EXERCICI 3 - nombres desordenats
 
 llista_numeros = [5, 8, 2, 4, 1, 19, 12, 11, 3]
 
@@ -28,7 +28,6 @@ if 3 in llista_numeros:
     print(f"Si, el número 3 apareix {llista_numeros.count(3)} vegades")
 else:
     print("No, el número 3 no es a la llista")
-
 
 #Quantes vegades apareixen els nombres 3 i 4?
 contar3 = llista_numeros.count(3)
@@ -55,3 +54,28 @@ print(sorted(llista_numeros)[0:3])
 
 #Quin és el rang d’aquesta llista?
 print(range(len(llista_numeros)))
+
+
+# EXERCICI 4 diccionari
+compra = { 
+    "Pomes" : {"Qty": 5, "€": 0.42}, 
+    "Peres" : {"Qty": 3, "€": 0.66} 
+}
+
+#Afegeix alguna fruita més
+compra.update({"Taronges": {"Qty": 1, "€": 0.70}})
+print(compra)
+
+#Quant han costat les peres en total?
+info_peres = compra["Peres"]
+preu_peres = info_peres["€"]
+cantitat_peres = info_peres["Qty"]
+final_peres = preu_peres * int(cantitat_peres)
+print(f"Les peres en total han costat {final_peres}€")
+
+#Quantes fruites hem comprat en total?
+total_fruites = 0
+for i in compra:
+    total_fruites += compra[i]["Qty"]
+print(f"tenim un total de {total_fruites} fruites")
+#Quina és la fruita més cara?
