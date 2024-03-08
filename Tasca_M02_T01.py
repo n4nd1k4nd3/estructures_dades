@@ -78,4 +78,15 @@ total_fruites = 0
 for i in compra:
     total_fruites += compra[i]["Qty"]
 print(f"tenim un total de {total_fruites} fruites")
+
 #Quina és la fruita més cara?
+fruita_mes_cara = ""
+preu_mes_alt = 0.0
+for fruita, preu in compra.items():
+    if preu["€"] > preu_mes_alt:
+        preu_mes_alt = preu["€"]
+        fruita_mes_cara = fruita
+
+print(preu_mes_alt)
+print(fruita_mes_cara)
+
