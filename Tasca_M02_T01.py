@@ -85,8 +85,8 @@ preu_mes_alt = 0.0
 for fruita, preu in compra.items():
     if preu["€"] > preu_mes_alt:
         preu_mes_alt = preu["€"]
-        fruita_mes_cara = fruita
+        fruita_mes_cara = fruita  
+print(f"La fruita mes cara son les {fruita_mes_cara} amb un cost de {preu_mes_alt} € per quilo.")
 
-print(preu_mes_alt)
-print(fruita_mes_cara)
+
 
