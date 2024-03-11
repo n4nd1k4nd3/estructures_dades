@@ -46,7 +46,7 @@ def noms_repetits(nom: str, num_de_noms: int):
     if num_de_noms == 0:
         return "Error, has indicat 0 vegades"
     else:
-        return f"{nom * num_de_noms}"
+        return f"{nom} " * num_de_noms
     
 resultat3 = noms_repetits(nom, num_de_noms)
 print(resultat3)
