@@ -54,7 +54,7 @@ print(resultat3)'''
 '''- Exercici 4
 Crea una funció que donada una llista qualsevol, et digui si és simètrica o no. Si ho és, que et digui quants elements té.'''
 
-def es_simetrica(llista):
+'''def es_simetrica(llista):
     llargada = len(llista) 
     meitat = llargada // 2 
 
@@ -76,8 +76,25 @@ resultat_41 = es_simetrica(llista_1)
 resultat_42 = es_simetrica(llista_2)
 
 print(resultat_41)
-print(resultat_42)
+print(resultat_42)'''
 
 '''- Exercici 5
 Crea una funció que donada una llista, et digui quants números coincideixen amb la seva posició. Per exemple [3,4,2,0,2,3,6] el 2 i el 6 coincideixen.
 '''
+
+def coincideixen(llista_5):
+    numeros_coincideixen = []
+    for i in range(len(llista_5)):
+        if i == llista_5[i]:
+            numeros_coincideixen.append(i)
+    return f"Els numeros que coincideixen son els: {numeros_coincideixen}"
+
+
+llista_51= [3, 4, 2, 0, 2, 3, 6]
+llista_52= [0, 4, 5, 3, 2, 5, 8]
+
+resultat_51 = coincideixen(llista_51)
+resultat_52 = coincideixen(llista_52)
+
+print(resultat_51)
+print(resultat_52)
